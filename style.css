@@ -1,0 +1,126 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.container{
+    background: black; 
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+  }
+
+    /* the body */
+  /* .calculator{
+    background-color: red;
+  } */
+
+  .calculator form input{
+    border: 0;
+    outline: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px; 
+    color: white;
+  }
+
+  form .display{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 25px;
+  }
+
+  form input.equal{
+    width: 200px;
+    background-color:#F59906
+  }
+
+  form input.function{
+    background-color:#F59906
+  }
+
+
+    form input.button{
+      background-color:#313131;
+    }
+
+    form input.main{
+      background-color: #9F9F9F;
+    }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: aqua;
+    margin-top: 50px;
+  }
+
+
+ /* CSS works from top to bottom so once the width is more than 768px, it wont obey the media query. 
+ it will instead ignore it and obey every other thing before it. */
+
+  @media all and (max-width: 768px) {
+  .container{ 
+      width: 100%;
+      height: 100vh;
+    }
+
+
+  .calculator form input{
+    border: 0;
+    outline: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px; 
+    color: white;
+  }
+  form input.function{
+    background-color:#F59906
+  }
+  form input.equal{
+    width: 100px;
+    background-color:#F59906
+  }
+
+  form input.button{
+    background-color:#313131;
+  }
+  form input.main{
+    background-color: #9F9F9F;
+    font-size: 15px;
+  }
+   footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 40px ;
+  }
+  form .display{
+    display: flex;
+    justify-content: center;
+    margin: 3px; 
+  }
+
+  }
